@@ -1,0 +1,160 @@
+body {
+  overflow: hidden;
+}
+.font-xxlarge {
+  font-size: 7.03125vw;
+}
+.font-xlarge {
+  font-size: 4.6875vw;
+}
+.font-large {
+  font-size: 4.1015625vw;
+}
+.font-medium {
+  font-size: 3.515625vw;
+}
+.font-small {
+  font-size: 2.9296875vw;
+}
+.font-mini {
+  font-size: 2.44140625vw;
+}
+* {
+  margin: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'メイリオ', Verdana, 'ＭＳ Ｐゴシック', sans-serif;
+  color: #000000;
+  background: #ffffff;
+  font-weight: normal;
+  font-size: 3.515625vw;
+}
+#body {
+  width: 100%;
+  height: 100%;
+  display: table;
+  overflow: hidden;
+}
+#container {
+  padding: auto auto;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+#card {
+  background-color: #ff803d;
+  height: 53.29286008417968vw;
+  width: 89.2578125vw;
+  margin: 1.46484375vw 5.37109375vw;
+  border-radius: 1.953125vw;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0  0 20px #333333;
+}
+.top {
+  background-color: #ffffff;
+  height: 17.08984375vw;
+  border-top-left-radius: 1.953125vw;
+  border-top-right-radius: 1.953125vw;
+}
+.top .logo {
+  width: 39.0625vw;
+  height: 100%;
+}
+.top .logo img {
+  height: 11.71875vw;
+  margin: auto;
+  padding: 2.9296875vw;
+  display: block;
+}
+.bottom {
+  margin: 1.953125vw 3.90625vw;
+}
+.identity {
+  width: 22.4609375vw;
+  height: 31.25vw;
+  float: left;
+}
+.photo {
+  background-color: yellow;
+  width: 100%;
+  height: 24.4140625vw;
+  margin-bottom: 0.48828125vw;
+  display: inline-block;
+  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.member_code {
+  width: 100%;
+  height: 4.8828125vw;
+  line-height: 4.8828125vw;
+  background-color: #ffffff;
+  color: #000;
+  text-align: center;
+  border-radius: 0.78125vw;
+  font-size: 2.9296875vw;
+}
+.profile {
+  float: right;
+  width: 56.640625vw;
+}
+.profile .item {
+  clear: both;
+  margin-bottom: 1.953125vw;
+}
+.profile .item .label {
+  background-color: #ffe6bd;
+  color: #ff803d;
+  width: 12.109375vw;
+  float: left;
+  clear: both;
+  height: 100%;
+  font-size: 2.44140625vw;
+  text-align: center;
+  border-top-left-radius: 0.78125vw;
+  border-bottom-left-radius: 0.78125vw;
+}
+.profile .item .value {
+  background-color: #ffffff;
+  float: right;
+  width: 38.57421875vw;
+  height: 100%;
+  border-top-right-radius: 0.78125vw;
+  border-bottom-right-radius: 0.78125vw;
+  padding-left: 2.9296875vw;
+  padding-right: 2.9296875vw;
+}
+.profile .phonetic {
+  height: 6.34765625vw;
+}
+.profile .phonetic .label,
+.profile .phonetic .value {
+  line-height: 6.34765625vw;
+}
+.profile .name {
+  height: 14.6484375vw;
+}
+.profile .name .label,
+.profile .name .value {
+  line-height: 14.6484375vw;
+}
+.profile .name .value {
+  font-size: 4.6875vw;
+}
+.profile .belongs_to {
+  height: 6.34765625vw;
+}
+.profile .belongs_to .label,
+.profile .belongs_to .value {
+  line-height: 6.34765625vw;
+}
+.profile .item.belongs_to {
+  margin-bottom: 0;
+}
