@@ -11,8 +11,6 @@ if (empty($memberCode)) {
     exit;
 }
 
-// http://localhost:8000/?id=R1200024&name=%E9%87%8E%E6%BE%A4%E3%80%80%E7%A7%80%E4%BB%81&phonetic=%E3%83%8E%E3%82%B6%E3%83%AF%E3%80%80%E3%83%92%E3%83%87%E3%83%92%E3%83%88&belongs_to=%E3%83%95%E3%83%AA%E3%83%BC%E3%83%A9%E3%83%B3%E3%82%B9&photo_url=%20http://mitacafe.co/uploads/cavtc5c6957411fd28aa9f414.jpg
-
 function h($string)
 {
     echo htmlspecialchars($string);
@@ -23,6 +21,9 @@ function h($string)
 <meta charset="UTF-8">
 <head>
     <title>ミタカフェ会員カード</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
