@@ -103,6 +103,7 @@ body {
     background: @white;
     font-weight: normal;
     .font-medium;
+    background-image:url('texture.jpg');
 }
 
 // vertical centering
@@ -128,16 +129,19 @@ body {
     overflow: hidden;
     position: relative;
     .box-shadow(2, 2, 30);
+    background-image:url('orange.jpg');
 }
 
 .top {
     background-color: @white;
     .view-port-height(175);
     .view-port-border-radius-top(20);
+    background-image:url('white.jpg');
 
     .logo {
         .view-port-width(400);
         height: 100%;
+        float: left;
 
         img {
             .view-port-height(120);
@@ -145,6 +149,16 @@ body {
             .view-port-padding(30);
             display: block;
         }
+    }
+    
+    .qrcode {
+        float: right;
+        .view-port-height(175);
+        .view-port-width(175);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .view-port-border-radius-top(20);
     }
 }
 
