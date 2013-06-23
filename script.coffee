@@ -31,5 +31,6 @@ $ ()->
         clearTimeout(resizeTimer) # this detect resize-end event
         resizeTimer = setTimeout ()->
             $('#container').show()
+            $('div').css("z-index", 1)
         , 100
     $(window).resize(resizeSlide)

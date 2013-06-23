@@ -30,7 +30,8 @@
       $('#container').hide();
       clearTimeout(resizeTimer);
       return resizeTimer = setTimeout(function() {
-        return $('#container').show();
+        $('#container').show();
+        return $('div').css("z-index", 1);
       }, 100);
     };
     return $(window).resize(resizeSlide);
