@@ -5,13 +5,13 @@
   showQRCodePopup = function() {
     $('#mask').show();
     $('#qrcode_popup').show();
-    return $('#body').addClass('blur');
+    return $('#card').hide();
   };
 
   hideQRCodePopup = function() {
     $('#mask').hide();
     $('#qrcode_popup').hide();
-    return $('#body').removeClass('blur');
+    return $('#card').show();
   };
 
   $('body').on('click', function() {
@@ -21,7 +21,7 @@
   window.addEventListener('devicemotion', function(evt) {
     var z;
     z = evt.accelerationIncludingGravity.z;
-    if (z > 5) {
+    if (z > 3) {
       return showQRCodePopup();
     } else {
       return hideQRCodePopup();

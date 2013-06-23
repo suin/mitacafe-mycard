@@ -1,12 +1,12 @@
 showQRCodePopup = ()->
     $('#mask').show()
     $('#qrcode_popup').show()
-    $('#body').addClass('blur')
+    $('#card').hide()
 
 hideQRCodePopup = ()->
     $('#mask').hide()
     $('#qrcode_popup').hide()
-    $('#body').removeClass('blur')
+    $('#card').show()
 
 
 $('body').on 'click', ()->
@@ -15,7 +15,7 @@ $('body').on 'click', ()->
 
 window.addEventListener 'devicemotion', (evt)->
     z = evt.accelerationIncludingGravity.z
-    if z > 5
+    if z > 3
         showQRCodePopup()
     else
         hideQRCodePopup()
