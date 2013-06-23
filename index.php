@@ -21,6 +21,7 @@ function h($string)
 <meta charset="UTF-8">
 <head>
     <title>ミタカフェ会員カード</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />

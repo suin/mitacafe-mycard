@@ -1,21 +1,35 @@
-showQRCodePopup = ()->
-    $('#mask').show()
-    $('#qrcode_popup').show()
-    $('#card').hide()
+$ ()->
 
-hideQRCodePopup = ()->
-    $('#mask').hide()
-    $('#qrcode_popup').hide()
-    $('#card').show()
+    showQRCodePopup = ()->
+        $('#mask').show()
+        $('#qrcode_popup').show()
+        $('#card').hide()
 
-
-$('body').on 'click', ()->
-    popupQR()
+    hideQRCodePopup = ()->
+        $('#mask').hide()
+        $('#qrcode_popup').hide()
+        $('#card').show()
 
 
-window.addEventListener 'devicemotion', (evt)->
-    z = evt.accelerationIncludingGravity.z
-    if z > 3
-        showQRCodePopup()
-    else
-        hideQRCodePopup()
+    $('body').on 'click', ()->
+        popupQR()
+
+
+    window.addEventListener 'devicemotion', (evt)->
+        z = evt.accelerationIncludingGravity.z
+        if z > 3
+            showQRCodePopup()
+        else
+            hideQRCodePopup()
+
+    #
+    # To keep style, we need to re-bind `cycle` on window resize
+    #
+    resizeTimer = null
+    resizeSlide = ()->
+        $('#container').hide()
+        clearTimeout(resizeTimer) # this detect resize-end event
+        resizeTimer = setTimeout ()->
+            $('#container').show()
+        , 100
+    $(window).resize(resizeSlide)
