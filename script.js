@@ -4,18 +4,13 @@
   $(function() {
     var hideQRCodePopup, resizeSlide, resizeTimer, showQRCodePopup;
     showQRCodePopup = function() {
-      $('#mask').show();
-      $('#qrcode_popup').show();
+      $('#card_backward').show();
       return $('#card').hide();
     };
     hideQRCodePopup = function() {
-      $('#mask').hide();
-      $('#qrcode_popup').hide();
+      $('#card_backward').hide();
       return $('#card').show();
     };
-    $('body').on('click', function() {
-      return popupQR();
-    });
     window.addEventListener('devicemotion', function(evt) {
       var z;
       z = evt.accelerationIncludingGravity.z;

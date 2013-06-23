@@ -123,7 +123,7 @@ body {
     vertical-align: middle;
     position: relative;
 }
-#card {
+#card, #card_backward {
     background-color: @orange;
     .view-port-height(@screenHeight - 30);
     .view-port-width(@screenWidth - 110);
@@ -133,6 +133,11 @@ body {
     position: relative;
     .box-shadow(2, 2, 30);
     background-image:url('orange.jpg');
+}
+
+#card_backward {
+    display: none;
+    background-image:url('white.jpg');
 }
 
 .top {
@@ -261,8 +266,7 @@ body {
     }
 }
 
-#qrcode_popup {
-    display: none;
+.qrcode-large {
     .view-port-height(500);
     .view-port-width(500);
     position: absolute;
@@ -271,27 +275,7 @@ body {
     top: 50%;
     .view-port-margin-top(-250);
     .view-port-margin-left(-250);
-        background-position: center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#mask {
-    display: none;
-    background-color: @darkGray;
-    opacity: 0.5;
-    position: absolute;
-    height: 300%;
-    width: 100%;
-    z-index: 5;
-    margin-top: -100%;
-}
-
-.blur {
-    filter: blur(10px);
-    // Browser Specific
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -o-filter: blur(10px);
-    -ms-filter: blur(10px);
 }

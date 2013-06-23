@@ -1,19 +1,11 @@
 $ ()->
-
     showQRCodePopup = ()->
-        $('#mask').show()
-        $('#qrcode_popup').show()
+        $('#card_backward').show()
         $('#card').hide()
 
     hideQRCodePopup = ()->
-        $('#mask').hide()
-        $('#qrcode_popup').hide()
+        $('#card_backward').hide()
         $('#card').show()
-
-
-    $('body').on 'click', ()->
-        popupQR()
-
 
     window.addEventListener 'devicemotion', (evt)->
         z = evt.accelerationIncludingGravity.z

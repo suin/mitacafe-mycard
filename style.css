@@ -47,7 +47,8 @@ body {
   vertical-align: middle;
   position: relative;
 }
-#card {
+#card,
+#card_backward {
   background-color: #ff803d;
   height: 53.29286008417968vw;
   width: 89.2578125vw;
@@ -57,6 +58,10 @@ body {
   position: relative;
   box-shadow: 0  0 20px #333333;
   background-image: url('orange.jpg');
+}
+#card_backward {
+  display: none;
+  background-image: url('white.jpg');
 }
 .top {
   background-color: #ffffff;
@@ -172,8 +177,7 @@ body {
 .profile .item.belongs_to {
   margin-bottom: 0;
 }
-#qrcode_popup {
-  display: none;
+.qrcode-large {
   height: 48.828125vw;
   width: 48.828125vw;
   position: absolute;
@@ -185,21 +189,4 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-#mask {
-  display: none;
-  background-color: #333333;
-  opacity: 0.5;
-  position: absolute;
-  height: 300%;
-  width: 100%;
-  z-index: 5;
-  margin-top: -100%;
-}
-.blur {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
 }
