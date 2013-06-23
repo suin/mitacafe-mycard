@@ -33,13 +33,13 @@ body {
   background: #ffffff;
   font-weight: normal;
   font-size: 3.515625vw;
-  background-image: url('texture.jpg');
 }
 #body {
   width: 100%;
   height: 100%;
   display: table;
   overflow: hidden;
+  background-image: url('texture.jpg');
 }
 #container {
   padding: auto auto;
@@ -171,4 +171,35 @@ body {
 }
 .profile .item.belongs_to {
   margin-bottom: 0;
+}
+#qrcode_popup {
+  display: none;
+  height: 48.828125vw;
+  width: 48.828125vw;
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  top: 50%;
+  margin-top: -24.4140625vw;
+  margin-left: -24.4140625vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mask {
+  display: none;
+  background-color: #333333;
+  opacity: 0.5;
+  position: absolute;
+  height: 300%;
+  width: 100%;
+  z-index: 5;
+  margin-top: -100%;
+}
+.blur {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
 }

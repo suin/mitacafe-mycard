@@ -27,6 +27,8 @@ function h($string)
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <div id="mask"></div>
+    <div id="qrcode_popup" style="background-image: url('https://chart.googleapis.com/chart?cht=qr&chs=500x500&chl=<?php h($memberCode) ?>')"></div>
     <div id="body">
         <div id="container">
             <div id="card">
@@ -59,5 +61,7 @@ function h($string)
             </div>
         </div>
     </div>
+    <script src="components/zepto/zepto.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

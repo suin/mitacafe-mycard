@@ -42,6 +42,9 @@ body {
 .view-port-margin-right (@pixel) {
     margin-right: (1 * @pixel) / ( @screenWidth / 100) * 1vw;
 }
+.view-port-margin-left (@pixel) {
+    margin-left: (1 * @pixel) / ( @screenWidth / 100) * 1vw;
+}
 .view-port-margin-top (@pixel) {
     margin-top: (1 * @pixel) / ( @screenWidth / 100) * 1vw;
 }
@@ -103,7 +106,6 @@ body {
     background: @white;
     font-weight: normal;
     .font-medium;
-    background-image:url('texture.jpg');
 }
 
 // vertical centering
@@ -112,6 +114,7 @@ body {
     height: 100%;
     display:table;
     overflow: hidden;
+    background-image:url('texture.jpg');
 }
 #container {
     padding: auto auto;
@@ -258,3 +261,37 @@ body {
     }
 }
 
+#qrcode_popup {
+    display: none;
+    .view-port-height(500);
+    .view-port-width(500);
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 50%;
+    .view-port-margin-top(-250);
+    .view-port-margin-left(-250);
+        background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mask {
+    display: none;
+    background-color: @darkGray;
+    opacity: 0.5;
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    z-index: 5;
+    margin-top: -100%;
+}
+
+.blur {
+    filter: blur(10px);
+    // Browser Specific
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+}
